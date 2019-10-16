@@ -1,4 +1,4 @@
 package com.oskarro;
 
-public class ClassicCompressor {
+public class ClassicCompressor extends Compressor{
 }
