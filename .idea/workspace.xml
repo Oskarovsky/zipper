@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e5d2f5e8-055e-47d2-b709-2df3352a1039" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zipper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Zipper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/oskarro/ClassicCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/oskarro/ClassicCompressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/oskarro/Compressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/oskarro/Compressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/oskarro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/oskarro/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +28,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Libraries/Java_jars/org.apache.commons.io.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -91,7 +95,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571157200076</updated>
-      <workItem from="1571157205242" duration="3252000" />
+      <workItem from="1571157205242" duration="3523000" />
+      <workItem from="1571338934904" duration="3896000" />
     </task>
     <servers />
   </component>
@@ -103,7 +108,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
