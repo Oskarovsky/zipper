@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5d2f5e8-055e-47d2-b709-2df3352a1039" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/oskarro/resource/LunaMix9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/oskarro/resource/cukiereczek.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/oskarro/resource/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/oskarro/resource/red-vector-background-25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/oskarro/resource/stronaaa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/oskarro/resource/super.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/oskarro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/oskarro/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/oskarro/MultiCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/oskarro/MultiCompressor.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,12 +36,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Libraries/Java_jars/org.apache.commons.io.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/oskarro/resource" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/oskarro/resource" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/oskarro" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.oskarro" />
     </key>
@@ -102,7 +115,9 @@
       <updated>1571157200076</updated>
       <workItem from="1571157205242" duration="3523000" />
       <workItem from="1571338934904" duration="3896000" />
-      <workItem from="1571764234808" duration="2165000" />
+      <workItem from="1571764234808" duration="3377000" />
+      <workItem from="1571767905526" duration="270000" />
+      <workItem from="1571768208749" duration="265000" />
     </task>
     <servers />
   </component>

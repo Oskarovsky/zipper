@@ -61,7 +61,7 @@ public class MultiCompressor extends Compressor {
         // setup and config zip file compressor
         Map<String, String> compressorEnvironment = new HashMap<>();
         compressorEnvironment.put("create", "true");
-        URI uriForZip = URI.create(String.format("jar:file%s", this.getOutputFile()));
+        URI uriForZip = URI.create(String.format("jar:file:%s", this.getOutputFile()));
         compressorFileSystem = FileSystems.newFileSystem(uriForZip, compressorEnvironment);
     }
 
