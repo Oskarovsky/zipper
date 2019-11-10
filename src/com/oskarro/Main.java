@@ -7,35 +7,29 @@ public class Main {
 
     public static void main(String[] args) {
 
-        args = new String[3];
+        String pathToCompressingFile = "/home/oskarro/Developer/MyProjects/javaProjects/Zipper/src/com/oskarro/resource/";
 
-        args[0] = "async";
-        args[1] = "/home/oskarro/Developer/MyProjects/javaProjects/Zipper/src/com/oskarro/resource/";
-        args[2] = "oskar.zip";
-
-        if (args.length != 3) {
-            System.out.println("Wymagane są 3 argumenty: [sync/async] [folder do kompresji] [plik wyjściowy] ");
-        }
-
-        Compressor compressor;
+        Compressor compressor = null;
 
         System.out.println("Wybierz sposób kompresji:" +
                 "\n 1 - sync" +
                 "\n 2 - async");
         System.out.print("Twój wybór: ");
         Scanner scanner = new Scanner(System.in);
-        int compressingType = scanner.nextInt();
+        String compressingType = scanner.next();
         System.out.print("\nPodaj nazwę koncową pliku: ");
         String compressingName = scanner.next();
 
 
-
-        if(compressingType == 1) {
+        if(compressingType.equals("1")) {
             System.out.println("Uruchamiamy synchroniczne kompresowanie danych");
-            compressor = new ClassicCompressor(args[1], compressingName+".zip");
-        } else {
+            compressor = new ClassicCompressor(pathToCompressingFile, compressingName+".zip");
+        } else if(compressingType.equals("2")) {
             System.out.println("Uruchamiamy wielowątkowe kompresowanie danych");
-            compressor = new MultiCompressor(args[1], compressingName+".zip");
+            compressor = new MultiCompressor(pathToCompressingFile, compressingName+".zip");
+        } else {
+            System.out.println("Opcja \"" + compressingType + "\" nie istnieje!" +
+                    "\n Wybierz ponownie");
         }
 
         System.out.println("Rozpoczynamy kompresowanie");
@@ -56,7 +50,8 @@ public class Main {
 
         System.out.println("Kompresja zakonczona!");
         System.out.printf("Kompresja %s plików została wykonana w %s sekundy", compressor.getCount(), secondElapsed);
+    }
 
-
+    public void fetchUserInput() {
     }
 }
