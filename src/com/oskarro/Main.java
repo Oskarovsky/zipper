@@ -9,7 +9,7 @@ public class Main {
 
         String pathToCompressingFile = "/home/oskarro/Developer/MyProjects/javaProjects/Zipper/src/com/oskarro/resource/";
 
-        Compressor compressor = null;
+        Compressor compressor;
 
         System.out.println("Wybierz sposób kompresji:" +
                 "\n 1 - sync" +
@@ -29,7 +29,8 @@ public class Main {
             compressor = new MultiCompressor(pathToCompressingFile, compressingName+".zip");
         } else {
             System.out.println("Opcja \"" + compressingType + "\" nie istnieje!" +
-                    "\n Wybierz ponownie");
+                    "\nSystem zakończył działanie");
+            return;
         }
 
         System.out.println("Rozpoczynamy kompresowanie");
