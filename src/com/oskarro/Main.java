@@ -1,6 +1,7 @@
 package com.oskarro;
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -8,7 +9,7 @@ public class Main {
 
         args = new String[3];
 
-        args[0] = "sysnc";
+        args[0] = "async";
         args[1] = "/home/oskarro/Developer/MyProjects/javaProjects/Zipper/src/com/oskarro/resource/";
         args[2] = "oskar.zip";
 
@@ -18,12 +19,23 @@ public class Main {
 
         Compressor compressor;
 
-        if(args[0].equals("sync")) {
+        System.out.println("Wybierz sposób kompresji:" +
+                "\n 1 - sync" +
+                "\n 2 - async");
+        System.out.print("Twój wybór: ");
+        Scanner scanner = new Scanner(System.in);
+        int compressingType = scanner.nextInt();
+        System.out.print("\nPodaj nazwę koncową pliku: ");
+        String compressingName = scanner.next();
+
+
+
+        if(compressingType == 1) {
             System.out.println("Uruchamiamy synchroniczne kompresowanie danych");
-            compressor = new ClassicCompressor(args[1], args[2]);
+            compressor = new ClassicCompressor(args[1], compressingName+".zip");
         } else {
             System.out.println("Uruchamiamy wielowątkowe kompresowanie danych");
-            compressor = new MultiCompressor(args[1], args[2]);
+            compressor = new MultiCompressor(args[1], compressingName+".zip");
         }
 
         System.out.println("Rozpoczynamy kompresowanie");
