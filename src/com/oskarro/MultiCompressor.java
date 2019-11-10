@@ -2,6 +2,7 @@ package com.oskarro;
 
 import org.apache.commons.io.IOUtils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -61,7 +62,9 @@ public class MultiCompressor extends Compressor {
         // setup and config zip file compressor
         Map<String, String> compressorEnvironment = new HashMap<>();
         compressorEnvironment.put("create", "true");
-        URI uriForZip = URI.create(String.format("jar:file:%s", this.getOutputFile()));
+        URI uriForZip = URI.create(String.format("jar:file:" + getInputDir() + "/%s", getOutputFile()));
+        System.out.println(uriForZip);
+        System.out.println(getOutputFile());
         compressorFileSystem = FileSystems.newFileSystem(uriForZip, compressorEnvironment);
     }
 

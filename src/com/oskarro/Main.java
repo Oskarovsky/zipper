@@ -1,6 +1,5 @@
 package com.oskarro;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -59,7 +58,7 @@ public class Main {
 
         System.out.println("================");
         System.out.println("Kompresja zakonczona!");
-        System.out.printf("Kompresja %s plików została wykonana w %s sekundy", compressor.getCount(), secondElapsed);
+        //System.out.printf("Kompresja %s plików została wykonana w %s sekundy", compressor.getCount(), secondElapsed);
     }
 
 }
