@@ -10,16 +10,23 @@ public class Main {
         String pathToCompressingFile = "/home/oskarro/Developer/MyProjects/javaProjects/Zipper/src/com/oskarro/resource/";
 
         Compressor compressor;
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Wybierz sposób kompresji:" +
                 "\n 1 - sync" +
                 "\n 2 - async");
         System.out.print("Twój wybór: ");
-        Scanner scanner = new Scanner(System.in);
         String compressingType = scanner.next();
+
+        while (!compressingType.equals("1") && !compressingType.equals("2")) {
+            System.out.println("Opcja \"" + compressingType + "\" nie istnieje!");
+            System.out.print("Twój wybór: ");
+            compressingType = scanner.next();
+        }
         System.out.print("\nPodaj nazwę koncową pliku: ");
         String compressingName = scanner.next();
 
+        System.out.println("================");
 
         if(compressingType.equals("1")) {
             System.out.println("Uruchamiamy synchroniczne kompresowanie danych");
@@ -33,6 +40,7 @@ public class Main {
             return;
         }
 
+        System.out.println("================");
         System.out.println("Rozpoczynamy kompresowanie");
         long startTime = System.nanoTime();
 
@@ -49,10 +57,9 @@ public class Main {
         long elapsedTime = endTime - startTime;
         double secondElapsed = (double) elapsedTime / 1000000000.0;
 
+        System.out.println("================");
         System.out.println("Kompresja zakonczona!");
         System.out.printf("Kompresja %s plików została wykonana w %s sekundy", compressor.getCount(), secondElapsed);
     }
 
-    public void fetchUserInput() {
-    }
 }
